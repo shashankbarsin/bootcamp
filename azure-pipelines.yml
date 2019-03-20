@@ -19,5 +19,5 @@ steps:
     command: login
     azureSubscriptionEndpoint: demo123
     azureContainerRegistry: devcamp123shasb.azurecr.io
-- script: docker build -t devcamp123shasb.azurecr.io/$(imageName)
+- script: docker build -t devcamp123shasb.azurecr.io/$(imageName) ./app
 - script: docker push devcamp123shasb.azurecr.io/$(imageName)
